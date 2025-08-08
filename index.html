@@ -2,9 +2,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>To-Do list Web</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="ASSET/logo list.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+
+    <header class="header">
+        <div class="headline1">
+            <h1>Welcome To do list web</h1>
+            <p>Make plans, make them happen...</p>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="jx">
+        <div class="gambar1">
+            <img src="ASSET/pp-01.png" alt="photo profile">
+        </div>
+    </div>
+
+    <div class="subheadline">
+        <i class="fa-solid fa-pen-to-square"></i>
+        <h2>List of productive activities</h2>
+    </div>
+<div class="all">
+    <main class="main-content">
+        <div class="cc">
+            <form id="todo-form" class="todo-form">
+                <div class="form-header">
+                    <button type="button" id="filter-btn" class="filter-btn"><i class='bx bx-filter'></i> Filter</button>
+                </div>
+
+                <div class="editform">
+                    <div class="input-group">
+                        <label for="headline"><i class='bx bx-text'></i> Headline</label>
+                        <input type="text" id="headline" placeholder="Judul tugas" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="date"><i class="fa-solid fa-calendar"></i> Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="notes"><i class='bx bx-note'></i> Notes</label>
+                        <input type="text" id="notes" placeholder="Catatan tambahan">
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" id="delete-all" class="delete"><i class='bx bxs-trash'></i> Delete All</button>
+                    <button type="submit" class="create-btn"><i class="fa-solid fa-plus"></i> Create</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="todo-list" class="todo-list-container"></div>
+    </main>
+</div>
+
+    <footer class="ft">
+        <p>Made with :</p>
+        <div class="ic2">
+            <i class='bx bxl-visual-studio'></i>
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-figma' ></i>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="JS/main.js"></script>
+    <!-- JS --> 
+
 </body>
 </html>
